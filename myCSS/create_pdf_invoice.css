@@ -1,0 +1,159 @@
+.invoice_clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#invoice_body a {
+    color: #5D6975;
+    text-decoration: underline;
+}
+
+#invoice_body {
+    position: relative;
+    /* width: 21cm;  
+    height: 29.7cm;  */
+    width: 206mm;
+    /* height: 287mm; */
+    height: auto;
+    margin: 0 auto;
+    color: #001028;
+    background: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.invoice_header {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+#invoice_body #logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#invoice_body #logo img {
+    width: 90px;
+}
+
+.invoice_h1 {
+    border-top: 1px solid #5D6975;
+    border-bottom: 1px solid #5D6975;
+    color: #5D6975;
+    font-size: 2.4em;
+    line-height: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 20px 0;
+    background: url(../img/dimension.png);
+}
+
+#invoice_body #project {
+    float: left;
+}
+
+#invoice_body #project span {
+    color: #5D6975;
+    text-align: right;
+    width: 52px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+#invoice_body #company {
+    float: right;
+    text-align: right;
+}
+
+#invoice_body #project div,
+#invoice_body #company div {
+    white-space: nowrap;
+}
+
+#invoice_body table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+#invoice_body table tr:nth-child(2n-1) td {
+    background: #F5F5F5;
+}
+
+#invoice_body table th,
+#invoice_body table td {
+    text-align: center;
+}
+
+#invoice_body table th {
+    padding: 5px 20px;
+    color: #5D6975;
+    border-bottom: 1px solid #C1CED9;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+#invoice_body table .service,
+#invoice_body table .desc {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#invoice_body table td {
+    padding: 20px;
+    text-align: right;
+}
+
+#invoice_body table td.service,
+#invoice_body table td.desc {
+    /* vertical-align: top; */
+}
+
+#invoice_body table td.unit,
+#invoice_body table td.qty,
+#invoice_body table td.total {
+    font-size: 1.2em;
+}
+
+#invoice_body table td.grand {
+    border-top: 1px solid #5D6975;
+    ;
+}
+
+#notices .notice {
+    color: #5D6975;
+    font-size: 1.2em;
+}
+
+.invoice_footer {
+    color: #5D6975;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid #C1CED9;
+    padding: 8px 0;
+    text-align: center;
+}
+
+div.ui-dialog {
+    position: fixed;
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #invoice_body, #invoice_body * {
+      visibility: visible;
+    }
+    #invoice_body {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }

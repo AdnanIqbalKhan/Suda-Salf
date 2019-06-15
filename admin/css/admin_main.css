@@ -1,0 +1,76 @@
+.main_content {
+    margin: 5em 2em;
+}
+
+td,
+th {
+    font-size: 1em !important;
+}
+
+.actions {
+    list-style-type: none;
+}
+
+.actions li {
+    float: left;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.view {
+    color: green;
+}
+
+.edit {
+    color: blue;
+}
+
+.delete {
+    color: red;
+}
+
+#view_record_dialog {
+    /* background-color: grey; */
+    /* position: sticky;
+    top: 20px; */
+    /* position: fixed; */
+}
+
+#view_record_dialog .ui-dialog-titlebar {}
+
+#view_record_dialog .ui-dialog-content {}
+
+#view_record_dialog .ui-dialog-buttonpane {}
+
+#img_container {
+    text-align: center;
+    margin: 2em;
+    /* width: 100%; */
+}
+
+
+/* #view_record_dialog img{
+    align-content: center;
+    margin: 2em;
+} */
+
+/* #download_file {
+    margin: -3em 2em 2em 3em;
+    float: right;
+}
+
+#download_file {
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #FAB005;
+    display: inline-block;
+}
+
+#download_file:hover {
+    background-color: #039445;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+} */

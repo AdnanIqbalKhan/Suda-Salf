@@ -1,0 +1,104 @@
+<a href="">
+    <img src="/img/logo.png" class="img-head" alt="" style="padding:1em;">
+</a>
+<div class="header">
+
+    <div class="container">
+
+        <div class="logo">
+            <h1>
+                <a href="/admin/index.php">
+                    Suda Salf
+                    <span>The Best Supermarket</span>
+                </a>
+            </h1>
+        </div>
+        <div class="head-t">
+            <ul class="card">
+                <li>
+                    <a href="/phpScripts/logout.php">
+                        <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
+                </li>
+                <li>
+                    <a href="/profile.php">
+                        <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-ri">
+            <ul class="social-top">
+                <li>
+                    <a href="https://www.facebook.com/sudasalf" target="_blank" class="icon facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/sudasalf" target="_blank" class="icon twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com/sudasalf" target="_blank" class="icon pinterest">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dribbble.com/sudasalf" target="_blank" class="icon dribbble">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="nav-top">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                </div>
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav ">
+                        <li <?php if(basename($_SERVER[ 'PHP_SELF'])=='index.php' ){ ?>
+                            class=" active"
+                            <?php }?> >
+                            <a href="/admin/index.php" class="hyper ">
+                                <span>
+                                    <i class="fas fa-home"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li <?php if(basename($_SERVER[ 'PHP_SELF'])=='user.php' ){ ?>
+                            class=" active"
+                            <?php }?> >
+                            <a href="/admin/user.php" class="hyper">
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li <?php if(basename($_SERVER[ 'PHP_SELF'])=='feedback.php' ){ ?>
+                            class=" active"
+                            <?php }?> >
+                            <a href="/admin/feedback.php" class="hyper">
+                                <span>Feedback</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>

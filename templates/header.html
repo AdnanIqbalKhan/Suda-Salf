@@ -1,0 +1,139 @@
+<a href="index.php">
+    <img src="img/logo.png" class="img-head" alt="" style="padding:1em;">
+</a>
+<div class="header">
+
+    <div class="container">
+
+        <div class="logo">
+            <h1>
+                <a href="index.php">
+                    Suda Salf
+                    <span>The Best Supermarket</span>
+                </a>
+            </h1>
+        </div>
+        <div class="head-t">
+            <ul class="card">
+                <?php if(isset($_SESSION["user"])){?>
+                <li>
+                    <a href="/phpScripts/logout.php">
+                        <i class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
+                </li>
+                <li>
+                    <a href="/profile.php">
+                        <i class="fa fa-user" aria-hidden="true"></i>Profile</a>
+                </li>
+                <?php }else{?>
+                <li>
+                    <a href="login.php">
+                        <i class="fa fa-user" aria-hidden="true"></i>Login</a>
+                </li>
+                <li>
+                    <a href="register.php">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a>
+                </li>
+                <?php }?>
+                <li>
+                    <a href="orderhistory.php">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a>
+                </li>
+                <li>
+                    <a href="faq.php">
+                        <i class="fa fa-ship" aria-hidden="true"></i>FAQs</a>
+                </li>
+                <li>
+                    <a href="checkout.php">
+                        <i class="fas fa-cart-arrow-down" aria-hidden="true"></i>Checkout</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-ri">
+            <ul class="social-top">
+                <li>
+                    <a href="https://www.facebook.com/sudasalf" target="_blank" class="icon facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/sudasalf" target="_blank" class="icon twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com/sudasalf" target="_blank" class="icon pinterest">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dribbble.com/sudasalf" target="_blank" class="icon dribbble">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-top">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                </div>
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav">
+                        <li <?php if(basename($_SERVER[ 'PHP_SELF'])=='index.php' ){ ?>
+                            class=" active"
+                            <?php }?> >
+                            <a href="index.php" class="hyper ">
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown" id="cat_drop_base">
+                            <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown">
+                                <span>Categories
+                                    <b class="caret"></b>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li <?php if(basename($_SERVER[ 'PHP_SELF'])=='contact.php' ){ ?>
+                            class=" active"
+                            <?php }?> >
+                            <a href="contact.php" class="hyper">
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li <?php if(basename($_SERVER[ 'PHP_SELF'])=='about.php' ){ ?>
+                            class=" active"
+                            <?php }?> >
+                            <a href="about.php" class="hyper">
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cart">
+
+                <span class="fa fa-shopping-cart my-cart-icon">
+                    <span class="badge badge-notify my-cart-badge"></span>
+                </span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>
